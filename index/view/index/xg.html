@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html style="font-size: 150.312px;" lang="CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="applicable-device" content="mobile">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <link href="/index_files/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="/index_files/am1.css">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link href="favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" type="text/css" href="/index_files/style-1.css?t={$tt}">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" media="screen">
+
+    <script src="/index_files/jquery-1.11.2.min.js"></script>
+    <script src="/index_files/common.js"></script>
+    <title>{$site.lqztitle}</title>
+    <meta name="keywords" content="{$site.lqzkeywords}">
+    <meta name="description" content="{$site.lqzdescription}">
+</head>
+<body id="top">
+<div id="tm" style="width: 100%; height: 0px"></div>
+<div class="box img100">
+    <img src="	{$site.lqzlogo}" width="100%" height="" border="0" vspace="0" title="{$site.lqzname}" alt="{$site.lqzname}">
+</div>
+<!--导航-->
+<div class="box">
+    <div id="nav2" class="nav2" data-fixed="">
+        <ul>
+            <li><a href="#gsb">高手榜区</a></li>
+            <li><a href="#xjgsb">玄机榜区</a></li>
+            <li><a href="#jjgp">挂牌解肖</a></li>
+            <li><a href="#jgjp">解管家婆</a></li>
+            <li><a href="#ampm">{$vstr}跑马</a></li>
+        </ul>
+        <ul>
+            <li><a href="#amcz">{$vstr}传真</a></li>
+            <li><a href="#xjpt">玄机平特</a></li>
+            <li><a href="#fcds">发财单双</a></li>
+            <li><a href="#jmts">解码头诗</a></li>
+            <li><a href="#zbtk">正版图库</a></li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    .nav2 {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 2px;
+        font-size: 13px;
+        background: #fff;
+    }
+
+    .nav2 ul {
+        padding: 2px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav2 ul li {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 2px;
+    }
+
+    .nav2 ul li a {
+        display: block;
+        padding: 3px 0;
+        text-align: center;
+        color: #fff;
+        border-radius: 50px;
+        background: #000080;
+    }
+
+    .nav2 ul li a:hover {
+        background: #da183b;
+    }
+
+    #nav2[data-fixed="fixed"] {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 1;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    }
+
+    .nav-img {
+        text-align: center;
+        background: #000;
+    }
+
+    .nav-img img {
+        width: auto;
+        height: 80px;
+    }
+
+    @media screen and (max-width: 800px) {
+        .nav-img img {
+            height: 70px;
+        }
+    }
+
+    @media screen and (min-width: 800px) {
+        .nav2 {
+            padding: 4px;
+            font-size: 16px;
+        }
+
+        .nav2 ul {
+            padding: 4px 0;
+        }
+
+        .nav2 ul li {
+            padding: 0 4px;
+        }
+
+        .nav2 ul li a {
+            padding: 5px 0;
+            cursor: pointer;
+        }
+    }
+</style>
+<script>
+    var obj = document.getElementById("nav2");
+    var ot = obj.offsetTop;
+    document.onscroll = function () {
+        var st = document.body.scrollTop || document.documentElement.scrollTop;
+        obj.setAttribute("data-fixed", st >= ot ? "fixed" : "")
+    }
+</script>
+
+<!-- 切换 
+<div class="box pad umeditor" id="nav2">
+    <a href="/"><img src="/index_files/am.gif?t={$tt}">
+</div>-->
+
+<div class="box">
+    {include file="index:kj"}
+</div>
+
+<!--域名-->
+<style>
+    a {
+        text-decoration: none;
+    }
+
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .xgam {
+        font-family: '微软雅黑';
+        font-size: 13pt;
+        text-align: center;
+        color: #000;
+        text-align: center;
+    }
+
+    .xgam img {
+        vertical-align: middle;
+    }
+
+    .xgam table {
+        border-collapse: collapse;
+        background: #f2eada;
+    }
+
+    .xgam table td {
+        padding: 0px 0;
+        border: solid 1px #c0c0c0;
+        cursor: pointer;
+    }
+
+    .xgam-tit {
+        padding: 3px 0 2px 0;
+        height: 20px;
+        line-height: 20px;
+        font-size: 15pt;
+        font-weight: 700;
+    }
+
+    .xgam-tit img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .xgam-web {
+        padding: 1px 0 0px 0;
+        font-size: 16pt;
+        font-weight: 700;
+    }
+</style>
+{$page['1']['content']}
+<!--域名-->
+
+
+<div class="box img100">
+    {$page['2']['content']}
+</div>
+<div class="box ">
+    <!-- index广告下载 -->
+    <script>
+        function setRemStandard(size) {
+            function cal_rem() {
+                var dev_width = document.documentElement.clientWidth || document.body.clientWidth;
+                document.documentElement.style.fontSize = dev_width / size * 100 + "px";
+            }
+
+            cal_rem();
+            window.addEventListener("resize", cal_rem, false);
+        }
+
+        setRemStandard(640);
+    </script>
+    <link rel="stylesheet" href="/index_files/index.css">
+
+    <iframe id="iframe_index_box" width="100%" src="/index_files/index.html" scrolling="no" frameborder="0"
+            style=""></iframe>
+    <!-- index广告下载结束 -->
+</div>
+
+
+<!-- 广告7 -->
+<div class="box img100">
+    {$page['3']['content']}
+</div>
+<!-- 广告7 -->
+
+
+<!--互联12-->
+<div class="box">
+    <style>
+        .box.spareURL a {
+            background: #158939;
+            display: block;
+            float: left;
+            width: 50%;
+            text-align: center;
+            font-size: 15pt;
+            color: #ff0000;
+            font-weight: bold;
+            text-shadow: 0px 0px 10px #99ffff;
+            animation-name: pulse;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-iteration-count: infinite;
+            text-decoration: none;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scaleX(1);
+            }
+            50% {
+                transform: scale3d(1.2, 1.2, 1.2);
+            }
+            to {
+                transform: scaleX(1);
+            }
+        }
+
+        .xinren {
+            font-size: 14pt;
+            font-weight: 700;
+            color: #df0909;
+            text-align: center;
+            background: linear-gradient(to right, #00ced1, #ffffff, #00ced1);
+            border-radius: 5px;
+            margin: 5px 0;
+        }
+    </style>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .zzhl-tit {
+        }
+
+        .zzhl-tit img {
+            width: 100%;
+            height: auto;
+        }
+
+        .zzhl {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+        }
+
+        .zzhl p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .zzhl a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .zzhl ul {
+            *zoom: 1;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .zzhl ul:after {
+            content: '.';
+            display: block;
+            height: 0;
+            clear: both;
+            overflow: hidden;
+            visibility: hidden
+        }
+
+        .zzhl ul li {
+            width: 50%;
+            margin: 0;
+            padding: 0;
+            float: left;
+            border-bottom: solid 1px #eee;
+            height: 55px
+        }
+
+        .zzhl ul li a {
+            padding: 10px;
+            display: block;
+            background: url(static/image/jp3.gif);
+            background-repeat: no-repeat;
+            background-origin: padding-box;
+            background-size: 100% 55px
+        }
+
+        .zzhl ul li a:hover {
+            background: #f5f5f5;
+        }
+
+        .zzhl .zzhl-img {
+            float: left;
+            margin-right: 8px;
+        }
+
+        .zzhl .zzhl-img img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .zzhl .zzhl-txt1 {
+        }
+
+        .zzhl .zzhl-txt2 {
+            font-size: 12px;
+            color: #888;
+        }
+
+        @media screen and (max-width: 600px) {
+            .zzhl ul li {
+                width: 100%;
+            }
+        }
+    </style>
+
+    {$page['4']['content']}
+
+</div>
+<!--互联12-->
+
+
+
+
+<div class="box">
+    {$page['5']['content']}
+</div>
+
+
+<div class="box" id="xjpt">
+    {$page['6']['content']}
+</div>
+
+
+<div class="box">
+    {$page['7']['content']}
+</div>
+
+<!--正版挂牌start-->
+<div class="box">
+    {$page['8']['content']}
+</div>
+
+<!--挂牌-->
+<div class="box">
+    {$page['9']['content']}
+</div>
+
+<div class="box">
+    {$page['10']['content']}
+</div>
+
+<div color="#000000">
+
+
+    <!-- 广告3 -->
+    <div class="box">
+        {$page['13']['content']}
+    </div>
+    <!-- 广告3 -->
+
+
+    <!--A级大公开一肖一码-->
+    <div class="box">
+        {$page['14']['content']}
+    </div>
+
+
+    <!--互联20-->
+    <div class="box">
+        <div class="box">
+            {$page['15']['content']}
+        </div>
+            <!--互联20-->
+
+
+        <div class="box">
+            {$page['16']['content']}
+        </div>
+
+
+        <div class="box">
+            {$page['17']['content']}
+        </div>
+
+
+        <div class="box">
+            {$page['18']['content']}
+        </div>
+
+
+        <div class="box">
+            {$page['19']['content']}
+        </div>
+
+        </div>
+
+
+    <div class="box" id="jjgp">
+        {$page['20']['content']}
+    </div>
+
+
+    <div class="box">
+        {$page['21']['content']}
+    </div>
+
+
+    <div class="box" id="jgjp">
+        {$page['22']['content']}
+    </div>
+
+
+    <div class="box">
+        {$page['23']['content']}
+    </div>
+
+    <div class="box">
+        {$page['24']['content']}
+    </div>
+
+    <div class="box" id="amcz">
+        {$page['25']['content']}
+    </div>
+
+
+    <div class="box">
+        {$page['26']['content']}
+    </div>
+
+
+    <div class="box">
+        {$page['27']['content']}
+    </div>
+
+
+    <div class="box">
+        {$page['28']['content']}
+    </div>
+
+
+    <div class="box">
+        {$page['29']['content']}
+    </div>
+
+
+        <!-- 广告5 -->
+    <div class="box">
+        {$page['30']['content']}
+    </div>
+        <!-- 广告5 -->
+
+
+    <div class="box">
+        {$page['31']['content']}
+    </div>
+
+
+    <div class="box">
+        {$page['32']['content']}
+    </div>
+
+
+    <div class="box">
+        {$page['33']['content']}
+    </div>
+
+
+    <div class="box">
+        {$page['34']['content']}
+    </div>
+
+
+    <div class="box" id="fcds">
+        {$page['35']['content']}
+    </div>
+
+
+    <div class="box">
+        {$page['36']['content']}
+    </div>
+
+
+    <div class="box">
+        {$page['37']['content']}
+    </div>
+
+
+        <!-- 广告6 -->
+    <div class="box">
+        {$page['38']['content']}
+    </div>
+        <!-- 广告6 -->
+
+
+    <div class="box">
+        {$page['39']['content']}
+    </div>
+
+
+        <!-----------公式贴  开始------------>
+        <div class="box" id="gsgs">
+            {$page['40']['content']}
+            <style>
+                .ccgi-gsb ul {
+                    padding: 0 10px 10px
+                }
+
+                .ccgi-gsb ul li {
+                    line-height: 40px;
+                    font-size: 14px;
+                    border-bottom: 1px #eaeaea solid;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis
+                }
+
+                .ccgi-gsb ul li span {
+                }
+
+                .ccgi-gsb ul li span.ccgi-gsb-tit {
+                    height: 20px;
+                    line-height: 20px;
+                    margin-right: 8px;
+                    padding: 0 5px;
+                    font-size: 12px;
+                    color: #fff;
+                    border-radius: 5px;
+                    background: #ff7200;
+                    display: inline-block
+                }
+
+                .ccgi-gsb ul li span.ccgi-gsb-tit.lv {
+                    background-color: #00c039
+                }
+
+                .ccgi-gsb ul li span.ccgi-gsb-tit.hong {
+                    background-color: #ff0004
+                }
+
+                .ccgi-gsb ul li span.ccgi-gsb-tit.cheng {
+                    background-color: #ff3f00
+                }
+
+                .ccgi-gsb ul li span.ccgi-gsb-tit.lan {
+                    background-color: #005cff
+                }
+
+                .ccgi-gsb ul li span.ccgi-zuozhe {
+                    float: right;
+                    margin-left: 10px;
+                    font-size: 14px;
+                    color: #999
+                }
+
+                .ccgi-gsb ul li a {
+                }
+
+                .gsdh {
+                    background-color: #ff0;
+                    font-family: '微软雅黑';
+                    font-size: 13pt;
+                    color: #000;
+                    font-weight: 500;
+                    border: solid 1px #C0C0C0;
+                    line-height: 0.8rem;
+                    max-width: 800px;
+                    margin: 0 auto;
+                    text-align: center;
+                }
+            </style>
+
+
+            <div class="ccgi-gsb">
+                <ul>
+                    {volist name="gsb" id="val"}
+
+                    <li>
+                        <span class="ccgi-zuozhe">{$vstr}葡京</span>
+                        <span class="ccgi-gsb-tit" style="background-color:#000080">
+                            <span style="background-color:#000080">公式贴</span>
+                        </span>
+                        <a target="_blank" href="{:url('index/gsb', ['id'=>$val.id])}">
+                                <span style="color:#000000;"><strong><span style="font-size:13pt">{$val.qi}期<font
+                                color="#0000FF">【{$val.name}】</font><span style="color:#ff0000;">已上料</span></span></strong>
+                            </span>
+                        </a>
+                    </li>
+                    {/volist}
+
+                </ul>
+            </div>
+
+        </div>
+
+
+    <div class="box">
+        {$page['41']['content']}
+    </div>
+
+
+    <div class="box">
+        {$page['42']['content']}
+    </div>
+
+
+    <div class="box">
+        {$page['43']['content']}
+    </div>
+
+
+
+
+    <div class="box">
+        {$page['44']['content']}
+    </div>
+
+
+    <div class="box">
+        {$page['45']['content']}
+    </div>
+
+
+    <div class="box" id="jmts">
+        {$page['46']['content']}
+    </div>
+
+
+        <!--互联36-->
+    <div class="box" >
+        {$page['47']['content']}
+    </div>
+        <!--互联36-->
+
+
+        <!--综合资料大全-->
+        <div class="box">
+            <table border="0" width="100%" bgcolor="#ffffff">
+                <tbody>
+                <tr>
+                    <td style="border:0px double #000080" bgcolor="#000080" height="30"><p align="center">
+                        <b><font face="楷体" color="#FFFF00" style="font-size: 20pt">老钱庄『综合资料大全』</font></b></p></td>
+                </tr>
+                </tbody>
+            </table>
+
+            <table class="in" width="100%" border="0" cellspacing="8" cellpadding="0" style="width: 100%">
+                <colgroup>
+                    <col width="33%">
+                    <col width="33%">
+                    <col width="33%">
+                </colgroup>
+                <tbody>
+                {volist name="zhzl" id="val"}
+                <tr>
+                    <td><a href="{:url('index/zlinfo', ['id'=>$val[0]['id']??0])}">{$val[0]['name']}</a></td>
+                    <td><a href="{:url('index/zlinfo', ['id'=>$val[1]['id']??0])}">{$val[1]['name']}</a></td>
+                    <td><a href="{:url('index/zlinfo', ['id'=>$val[2]['id']??0])}">{$val[2]['name']}</a></td>
+                </tr>
+                {/volist}
+
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 正版图库 -->
+        {include file="index:tuku"}
+
+
+
+        <!--生肖属性表格-->
+        {include file="index:biao"}
+        <!--生肖属性-->
+
+
+        <div class="box">
+            <div class="footer" style="padding:8px;font-size:14px">
+                <div class="cont center">
+                    <font color="#808080" face="微软雅黑" style="font-size: 9pt">
+                        Copyright ©2023&nbsp;老钱庄 版权所有 不得转载<br>
+                        〖{$vstr}老钱庄〗网址 www.582899.COM 请记好,以便再次访问!</font>
+                </div>
+            </div>
+        </div>
+
+
+        <div style="display:none">
+            <!--统计代码-->
+            <script type="text/javascript" src="/index_files/21629471.js"></script>
+        </div>
+
+
+    </div>
+</div></body>
+</html>

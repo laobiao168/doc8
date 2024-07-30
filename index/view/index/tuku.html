@@ -1,0 +1,104 @@
+<div class="box" id="zbtk">
+    <table border="0" width="100%" bgcolor="#ffffff">
+        <tbody>
+        <tr>
+            <td style="border:0px double #000080" bgcolor="#000080" height="30"><p align="center">
+                <b><font face="楷体" color="#FFFF00" style="font-size: 20pt">老钱庄『正版图库』</font></b></p></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="box">
+    <style>
+        /* ------*转换代码*----- */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrap {
+            border: solid 1px #CCC;
+        }
+
+        table.in {
+            background-color: #e8e8d0;
+            font-family: '微软雅黑';
+        }
+
+        table.in tr {
+        }
+
+        table.in td {
+            height: 50px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        table.in td a {
+            line-height: 50px;
+            border: 1px solid #CCC;
+            background: #FFF;
+            border-radius: 5px;
+            display: block;
+            color: #333;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        table.in td a:hover {
+            color: #FFF;
+            font-size: 16px;
+            border: 1px solid #CCC;
+            background: #55dd88;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+
+        .liu {
+            color: red;
+            font-weight: 800;
+        }
+
+        .liua:hover .liu {
+            color: white;
+        }
+    </style>
+    <div id="con_tabtuzhi_1" style="display: block;">
+        <table class="in" width="100%" border="0" cellspacing="8" cellpadding="0" style="width: 100%">
+            <colgroup>
+                <col width="33%">
+                <col width="33%">
+                <col width="33%">
+            </colgroup>
+            <tbody>
+            {volist name="zbtk" id="val"}
+            <tr>
+                <td height="22">
+                    <p align="center">
+                        <a target="_blank" href="https://2853tuku.com">
+                            <font color="#800000">{$val[0]['title']}</font>
+                        </a>
+                    </p>
+                </td>
+                <td height="22">
+                    <p align="center">
+                        <a target="_blank" href="https://2853tuku.com">
+                            <font color="#800000">{$val[1]['title']??''}</font>
+                        </a>
+                    </p>
+                </td>
+                <td height="22">
+                    <p align="center">
+                        <a target="_blank" href="https://2853tuku.com">
+                            <font color="#800000">{$val[2]['title']??''}</font>
+                        </a>
+                    </p>
+                </td>
+            </tr>
+            {/volist}
+
+            </tbody>
+        </table>
+    </div>
+
+</div>

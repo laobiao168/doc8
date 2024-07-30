@@ -1,0 +1,38 @@
+<!--首页【开奖】  开始-->
+<script src="/index_files/jquery-1.11.2.min.js"></script>
+<style>
+      .bbb{max-width: 800px; margin: 0px auto; width: 100%}
+    .kjdaohang{border-bottom: 1px solid crimson;}
+    .kjdaohang a{display: block; width: 82px; line-height: 38px; color: #000; float: left; text-align: center; font-size: 13px;  text-decoration: none;}
+    .kjdaohang a.cur{ background: crimson;color: #fff; font-weight: bold;}
+</style>
+<div class="bbb">
+      <div class="kjdaohang">
+		  <a href="javascript:;" data-id="kj2" data-url="/xg.html?t={$tt}" class="cur">香港六合彩</a>
+          <a href="javascript:;" data-id="kj4" data-url="/amxc.html?t={$tt}" >澳门新彩</a>
+          <a href="javascript:;" data-id="kj3" data-url="/am.html?t={$tt}">新澳门六合彩</a>
+
+          <div style="clear: both"></div>
+      </div>
+</div>
+<div class="kjqi kj1">
+       <iframe src="/xg.html?t={$tt}" width="100%" id="loadam" height="158" frameborder="0" scrolling="no"></iframe>
+</div>
+<div class="kjqi kj2"></div>
+<div class="kjqi kj3"></div>
+<div class="kjqi kj4"></div>
+
+<!--首页【开奖】  结束-->
+<script>
+$(function (){
+      $('.kjdaohang a').click(function (){
+            $(this).addClass('cur');
+            $('.kjdaohang a').not($(this)).removeClass('cur');
+            ifurl = $(this).attr('data-url');
+            $('.'+$(this).attr('data-id')).show();
+            $('.'+$(this).attr('data-id')).html('<iframe src="'+ifurl+'" width="100%" id="loadam" height="158" frameborder="0" scrolling="no"></iframe>')
+            $('.kjqi').not($('.'+$(this).attr('data-id'))).hide();
+            $('.kjqi').not($('.'+$(this).attr('data-id'))).html('');
+      });
+})
+</script>

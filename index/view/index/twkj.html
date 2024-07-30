@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" href="data:;base64,=">
+    <title></title>
+    <base href="." target="www.492130.com">
+    <SCRIPT src="/index_files/jquery-1.11.2.min.js" type="application/javascript"></SCRIPT>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #fff;
+        }
+
+        .new-KJ-TabBox-box {
+            margin: 0px auto;
+            max-width: 800px;
+            font-size: 16px;
+            height: 130px;
+            box-sizing: border-box;
+            color: #333;
+            padding: 8px;
+            font-family: 'PingFang SC', 'microsoft yahei', arial, 'helvetica neue', 'hiragino sans gb', sans-serif;
+        }
+
+        .new-KJ-TabBox-box a {
+            text-decoration: none;
+        }
+
+        .new-KJ-TabBox-box .kj-font-red {
+            color: #f00 !important;
+        }
+
+        .new-KJ-TabBox-box-tit {
+            display: flex;
+            align-items: center;
+            height: 17px;
+            line-height: 17px;
+            font-size: 17px;
+        }
+
+        .new-KJ-TabBox-box-tit-l {
+        }
+
+        .new-KJ-TabBox-box-tit-m {
+            flex: 1;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .new-KJ-TabBox-box-tit-r {
+        }
+
+        .new-KJ-TabBox-box-con {
+            display: flex;
+            margin: 8px 0;
+        }
+
+        .new-KJ-TabBox-box-con .kj-ball {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 61px;
+            text-align: center;
+            border-radius: 4px;
+            margin-right: 6px;
+            box-sizing: border-box;
+            flex-direction: column;
+        }
+
+        .new-KJ-TabBox-box-con .kj-ball:last-child {
+            margin-right: 0;
+        }
+
+        .new-KJ-TabBox-box-con .kj-ball:nth-last-child(3) {
+            margin-right: 6px;
+        }
+
+        .new-KJ-TabBox-box-con .kj-ball h2 {
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            line-height: 24px;
+            font-size: 28px;
+            font-weight: 900;
+            font-family: Tahoma, Geneva, sans-serif;
+        }
+
+        .new-KJ-TabBox-box-con .kj-ball .whsx {
+            display: inline-block;
+            height: 19px;
+            line-height: 19px;
+            margin-top: 6px;
+            padding: 0 6px;
+            border-radius: 2px;
+            color: #333;
+            font-size: 14px;
+            background: #fff;
+        }
+
+        .new-KJ-TabBox-box-con .kj-add {
+            display: flex;
+            align-items: center;
+            margin-right: 8px;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .new-KJ-TabBox-box-foot {
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+        }
+
+        .new-KJ-TabBox-box-foot-l {
+            flex: 1;
+        }
+
+        .new-KJ-TabBox-box-foot-r {
+        }
+
+        .new-KJ-TabBox-box-foot-r-sx {
+            display: inline-block;
+            width: 40px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            color: #fff;
+            border-radius: 4px;
+            background: #FF9900;
+        }
+
+        @media screen and (max-width: 650px) {
+            .new-KJ-TabBox-box {
+                font-size: 14px;
+            }
+
+            .new-KJ-TabBox-box-tit {
+                font-size: 16px;
+            }
+
+            .new-KJ-TabBox-box-con .kj-ball {
+                margin-right: 4px;
+            }
+
+            .new-KJ-TabBox-box-con .kj-ball:nth-last-child(3) {
+                margin-right: 4px;
+            }
+
+            .new-KJ-TabBox-box-con .kj-ball h2 {
+                font-size: 24px;
+            }
+
+            .new-KJ-TabBox-box-con .kj-ball .whsx {
+                margin-top: 4px;
+                padding: 0 2px;
+                font-size: 12px;
+            }
+
+            .new-KJ-TabBox-box-con .kj-add {
+                margin-right: 4px;
+            }
+
+            .new-KJ-TabBox-box-con .kj-add {
+                font-size: 24px;
+            }
+
+            .new-KJ-TabBox-box-foot {
+                font-size: 15px;
+            }
+        }
+
+        @media screen and (max-width: 450px) {
+            .new-KJ-TabBox-box-tit-m .kj-lotto-tit2 span:first-child {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="new-KJ-TabBox-box">
+    <div class="new-KJ-TabBox-box-tit">
+        <div class="new-KJ-TabBox-box-tit-l">新台湾六合彩 第<font class="kj-font-red"><span id="q">{$qiarr[0]}</span></font>期
+        </div>
+        <div class="new-KJ-TabBox-box-tit-m">
+            <div class="kj-lotto-tit2">
+                <span></span>
+                <span>
+                    <strong id="timeBox"></strong>
+                </span>
+            </div>
+        </div>
+        <div class="new-KJ-TabBox-box-tit-r" ><a target="_blank" href="/twkjls.html" class="kj-font-red">历史记录</a>
+        </div>
+    </div>
+    <div class="new-KJ-TabBox-box-con">
+        <div id="w1" class="kj-ball box m0" style="background-color: {$balls[0]['bgcolor']} ; color: rgb(255, 255, 255);">
+            <h2>
+                <div id="m1">{$balls[0]['ball']}</div>
+            </h2>
+            <div id="m1x" class="whsx">{$balls[0]['shengxiao']}</div>
+        </div>
+        <div id="w2" class="kj-ball box m0" style="background-color: {$balls[1]['bgcolor']}; color: rgb(255, 255, 255);">
+            <h2>
+                <div id="m2">{$balls[1]['ball']}</div>
+            </h2>
+            <div id="m2x" class="whsx">{$balls[1]['shengxiao']}</div>
+        </div>
+        <div id="w3" class="kj-ball box m0" style="background-color: {$balls[2]['bgcolor']}; color: rgb(255, 255, 255);">
+            <h2>
+                <div id="m3">{$balls[2]['ball']}</div>
+            </h2>
+            <div id="m3x" class="whsx">{$balls[2]['shengxiao']}</div>
+        </div>
+        <div id="w4" class="kj-ball box m0" style="background-color: {$balls[3]['bgcolor']}; color: rgb(255, 255, 255);">
+            <h2>
+                <div id="m4">{$balls[3]['ball']}</div>
+            </h2>
+            <div id="m4x" class="whsx">{$balls[3]['shengxiao']}</div>
+        </div>
+        <div id="w5" class="kj-ball box m0" style="background-color: {$balls[4]['bgcolor']}; color: rgb(255, 255, 255);">
+            <h2>
+                <div id="m5">{$balls[4]['ball']}</div>
+            </h2>
+            <div id="m5x" class="whsx">{$balls[4]['shengxiao']}</div>
+        </div>
+        <div id="w6" class="kj-ball box m0" style="background-color: {$balls[5]['bgcolor']}; color: rgb(255, 255, 255);">
+            <h2>
+                <div id="m6">{$balls[5]['ball']}</div>
+            </h2>
+            <div id="m6x" class="whsx">{$balls[5]['shengxiao']}</div>
+        </div>
+        <div class="kj-add">+</div>
+        <div id="w7" class="kj-ball box m0" style="background-color: {$balls[6]['bgcolor']}; color: rgb(255, 255, 255);">
+            <h2>
+                <div id="s1">{$balls[6]['ball']}</div>
+            </h2>
+            <div id="s1x" class="whsx">{$balls[6]['shengxiao']}</div>
+        </div>
+    </div>
+    <div class="new-KJ-TabBox-box-foot">
+        <div class="new-KJ-TabBox-box-foot-l">第<font class="kj-font-red"><span
+                id="nextQiShu">{$qiarr[1]}</span></font>期：
+                {$nextqiarr.rqstr}
+                {$nextqiarr.nextweek}
+                </div>
+        <div class="new-KJ-TabBox-box-foot-r"><a class="new-KJ-TabBox-box-foot-r-sx" style="cursor:pointer;"
+                                                 onclick="javascript:window.location.reload();">刷新</a></div>
+    </div>
+</div>
+
+<script>
+	var sheng = ["猴", "羊", "马", "蛇", "龙", "兔", "虎", "牛", "鼠", "猪", "狗", "鸡"];
+	var ball_r = ["01", "02", "07", "08", "12", "13", "18", "19", "23", "24", "29", "30", "34", "35", "40", "45", "46"];
+	var ball_b = ["03", "04", "09", "10", "14", "15", "20", "25", "26", "31", "36", "37", "41", "42", "47", "48"];
+	var ball_g = ["05", "06", "11", "16", "17", "21", "22", "27", "28", "32", "33", "38", "39", "43", "44", "49"];
+	var wuxing_jin= ['01', '02', '09', '10','23','24','31','32','39','40']; //金
+	var wuxing_mu= ['05','06','13','14','21','22','35','36','43','44'];  //木
+	var wuxing_shui= ['11','12','19','20','27','28','41','42','49'];     //水
+	var wuxing_huo= ['07','08','15','16','29','30','37','38','45','46']; //火
+	var wuxing_tu= ['03','04','17','18','25','26','33','34','47','48'];  //土
+
+    var sx_hou = ['08','20','32','44'];
+    var sx_yang = ['09','21','33','45'];
+    var sx_ma = ['10','22','34','46'];
+    var sx_she = ['11','23','35','47'];
+    var sx_long = ['12','24','36','48'];
+    var sx_tu = ['01','13','25','37','49'];
+    var sx_hu = ['02','14','26','38'];
+    var sx_niu = ['03','15','27','39'];
+    var sx_shu = ['04','16','28','40'];
+    var sx_zhu = ['05','17','29','41'];
+    var sx_gou = ['06','18','30','42'];
+    var sx_ji = ['07','19','31','43'];
+
+    var lastnumberstr = ''; //上次号码
+    var initstatus = false; //初始化状态
+    $(function (){
+       
+    });
+
+
+   //下期日期
+    var nextDate = new Date((new Date('{$nextqiarr.rq}')).getTime());
+    //倒计时
+    nextdaytime = nextDate.getTime();
+    daojishi();
+            
+    var djsmiao = 10000;
+    function daojishi() {
+        //获取当前时间的时间戳（单位毫秒）
+        var nowTime = new Date();
+        //把剩余时间毫秒数转化为秒
+        var times = (nextdaytime - nowTime.getTime()) / 1000;
+        djsmiao = times;
+        if(times<0){
+            $('#timeBox').html('00:00:00');
+            return;
+        }
+        //计算小时数 转化为整数
+        var h = parseInt(times / 60 / 60 % 24);
+        //如果小时数小于 10，要变成 0 + 数字的形式 赋值给盒子
+        hour = h < 10 ? "0" + h : h;
+        //计算分钟数 转化为整数
+        var m = parseInt(times / 60 % 60);
+        //如果分钟数小于 10，要变成 0 + 数字的形式 赋值给盒子
+        minute = m < 10 ? "0" + m : m;
+        //计算描述 转化为整数
+        var s = parseInt(times % 60);
+        //如果秒钟数小于 10，要变成 0 + 数字的形式 赋值给盒子
+        second = s < 10 ? "0" + s : s;
+        $('#timeBox').html(hour+':'+minute+':'+second);
+        setTimeout("daojishi()", 1000);
+    }
+
+    function getjiantisx(str){
+        if(str == '龍'){
+            return '龙';
+        }else if(str == '馬'){
+            return '马';
+        }else if(str == '雞'){
+            return '鸡';
+        }else if(str == '豬'){
+            return '猪';
+        }
+        return str;
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html style="font-size: 150.312px;" lang="CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="applicable-device" content="mobile">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <link href="/index_files/style.css?t={$tt}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="/index_files/am1.css">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link href="favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" type="text/css" href="/index_files/style-1.css?t={$tt}">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" media="screen">
+
+    <script src="/index_files/jquery-1.11.2.min.js"></script>
+    <script src="/index_files/common.js"></script>
+    <title>{$site.lqztitle}</title>
+    <meta name="keywords" content="{$site.lqzkeywords}">
+    <meta name="description" content="{$site.lqzdescription}">
+</head>
+<body id="top">
+<div id="tm" style="width: 100%; height: 0px"></div>
+<div class="box img100" style="display: none">
+    <img src="	{$site.lqzlogo}" width="100%" height="" border="0" vspace="0" title="{$site.lqzname}"
+         alt="{$site.lqzname}">
+</div>
+<!--导航-->
+<div class="box">
+    <div id="nav2" class="nav2" data-fixed="">
+        <ul>
+            <li><a href="#jzpt">精准平特</a></li>
+            <li><a href="#yxym">一肖一码</a></li>
+            <li><a href="#xjpt">玄机平特</a></li>
+            <li><a href="#gszl">高手资料</a></li>
+            <li><a href="#jyzl">精英资料</a></li>
+        </ul>
+        <ul>
+            <li><a href="#bxzt">八肖中特</a></li>
+            <li><a href="#yjzt解管家婆">独家来料</a></li>
+            <li><a href="#gjpyjh">解管家婆</a></li>
+            <li><a href="#amgp">澳门挂牌</a></li>
+            <li><a href="#wzsb">稳中双波</a></li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    .footer.bq a{color: #F5F5F5;}
+    .nav2 {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 2px;
+        font-size: 13px;
+        background: #fff;
+    }
+
+    .nav2 ul {
+        padding: 2px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav2 ul li {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 2px;
+    }
+
+    .nav2 ul li a {
+        display: block;
+        padding: 3px 0;
+        text-align: center;
+        color: #fff;
+        border-radius: 50px;
+        background: #000080;
+    }
+
+    .nav2 ul li a:hover {
+        background: #da183b;
+    }
+
+    #nav2[data-fixed="fixed"] {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 1;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    }
+
+    .nav-img {
+        text-align: center;
+        background: #000;
+    }
+
+    .nav-img img {
+        width: auto;
+        height: 80px;
+    }
+
+    @media screen and (max-width: 800px) {
+        .nav-img img {
+            height: 70px;
+        }
+    }
+
+    @media screen and (min-width: 800px) {
+        .nav2 {
+            padding: 4px;
+            font-size: 16px;
+        }
+
+        .nav2 ul {
+            padding: 4px 0;
+        }
+
+        .nav2 ul li {
+            padding: 0 4px;
+        }
+
+        .nav2 ul li a {
+            padding: 5px 0;
+            cursor: pointer;
+        }
+    }
+</style>
+<script>
+    var obj = document.getElementById("nav2");
+    var ot = obj.offsetTop;
+    document.onscroll = function () {
+        var st = document.body.scrollTop || document.documentElement.scrollTop;
+        obj.setAttribute("data-fixed", st >= ot ? "fixed" : "")
+    }
+</script>
+
+<!-- 切换 
+<div class="box pad umeditor" id="nav2">
+    <a href="/?k=hk"><img src="/index_files/xg.gif?t={$tt}">
+</div>-->
+
+<div class="box">
+    {include file="index:kj"}
+</div>
+
+
+<!--牢记郁闷-->
+<div class="box">
+    {$page['5']['content']??''}
+</div>
+<!--导航跳转-->
+{notempty name="dh"}
+<div class="box">
+    {$dh.content??''}
+</div>
+{/notempty}
+
+<!--精准平特-->
+<div id="jzpt" class="box">
+    <table border="0" width="100%" bgcolor="#ffffff">
+        <tbody>
+        <tr>
+            <td style="border:0px double #000080" bgcolor="#000080" height="30"><p align="center">
+                <b><font face="楷体" color="#FFFF00" style="font-size: 20pt">{$site.lqzname}『精准平特』</font></b></p></td>
+        </tr>
+        </tbody>
+    </table>
+    <table border="0" width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF"
+           style="border-left-width: 0px; border-right-width: 0px; border-top-width: 0px">
+        <tbody>
+
+        {volist name="data.ptyx" id="val"}
+        <tr>
+            <td align="center" height="40"
+                style="margin: 0px; padding: 3px 2px; border: 1px solid rgb(229, 229, 229); word-break: break-all;">
+                <b><font style="font-size: 17.3333px; line-height: 24.7619px;">{$val.qi}期</font><font
+                        style="font-size: 13pt;">：</font><font color="#800080" style="font-size: 13pt;">平特一肖</font><font
+                        color="#FF0000" style="font-size: 13pt;">【</font><font color="#FF0000"
+                                                                               style="font-size: 17.3333px;">{$val.shengxiao}</font><font
+                        color="#FF0000" style="text-align: start; font-size: 13pt;">】</font><font color="#800080"
+                                                                                                  style="text-align: start; font-size: 13pt;">开：</font><span
+                        style="text-align: start; color: rgb(255, 0, 0); font-size: 17.3333px; line-height: 24.7619px;">{$val.kai}</span></b><br>
+            </td>
+        </tr>
+
+        {/volist}
+
+        </tbody>
+    </table>
+
+</div>
+
+<!--一肖一码-->
+<div id="yxym" class="box">
+    <style>
+        .tb_yxym {
+            border: 1px solid #0000;
+            width: 100%;
+            word-wrap: break-word;
+            word-break: break-all;
+            list-style-type: none;
+            border-collapse: collapse;
+            border-spacing: 0px;
+            font-family: Microsoft YaHei;
+            letter-spacing: normal;
+            orphans: 2px;
+            text-indent: 0px;
+            text-transform: none;
+            widows: 2px;
+            word-spacing: 0px;
+            -webkit-text-stroke-width: 0px;
+            text-decoration-style: initial;
+            text-decoration-color: initial;
+            border: 0px none;
+            margin: 0px;
+            padding: 0px;
+            background: rgb(0, 0, 0);
+        }
+
+        .tb_yxym tr {
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
+            word-wrap: break-word;
+            word-break: break-all;
+            list-style: none;
+        }
+
+        .tb_yxym tr td {
+            text-align: left;
+            background: #000000;
+            margin: 0px;
+            padding: 3px 0px;
+            border: 1px solid rgb(125, 125, 125);
+            word-wrap: break-word;
+            word-break: break-all;
+            list-style: none;
+            color: #fff;
+        }
+
+        .tb_yxym tr th {
+            background: #FF0000;
+            color: #FFFFFF;
+        }
+
+        .tb_yxym tr td a {
+            list-style: none;
+            text-decoration: none;
+        }
+    </style>
+    <table class="tb_yxym">
+        <tbody>
+        {volist name="data.yxym" id="val"}
+        <tr>
+            <th>
+                <p>
+                {$val.qi}期A级大公开，借钱拿高利贷也要大胆下注!
+                </p>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                {$val.content}
+            </td>
+        </tr>
+        <tr>
+            <td style="margin: 0px; padding: 0px; border: 0px; word-wrap: break-word; word-break: break-all; list-style: none; background-color: rgb(255, 255, 0);">
+                <font color="#0000FF">
+                    {$val.qi}期一肖一码</font><font color="#FF0000">（{$val.kai}）</font>
+            </td>
+        </tr>
+
+        {/volist}
+        </tbody>
+    </table>
+</div>
+
+<!--精准36码-->
+<div id="jz36m" class="box">
+    <table border="0" width="100%" bgcolor="#ffffff">
+        <tbody>
+    <tr><td style="border:0px double #000080" bgcolor="#000080" height="30"><p align="center">
+        <b><font face="楷体" color="#FFFF00" style="font-size: 20pt">{$site.lqzname}『精准36码』</font></b></p></td></tr></tbody>
+    </table>
+    <table border="1" width="100%" cellpadding="0" cellspacing="0" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" bgcolor="#FFFFFF">
+        <tbody>
+        {volist name="data.jz36m" id="val"}
+        <tr>
+            <td class="center f11 black l150" style="">
+                <p align="left" style=""><font size="4" style=""><b>{$val.qi}期</b><font color="#008000" style="font-weight: bold;">【精准36码】</font>
+                    <font color="#FF0000" style="font-weight: bold;">开{$val.kai}中</font></font>
+                </p>
+                {$val.content}
+            </td>
+        </tr>
+        {/volist}
+        </tbody>
+    </table>
+</div>
+
+<!--玄机平特-->
+<div id="xjpt" class="box">
+    <table border="0" width="100%" bgcolor="#ffffff">
+        <tbody>
+        <tr>
+            <td style="border:0px double #000080" bgcolor="#000080" height="30"><p align="center">
+                <b><font face="楷体" color="#FFFF00" style="font-size: 20pt">{$site.lqzname}『玄机平特』</font></b></p></td>
+        </tr>
+        </tbody>
+    </table>
+    <table border="0" width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF"
+           style="border-left-width: 0px; border-right-width: 0px; border-top-width: 0px">
+        <tbody>
+
+        {volist name="data.xjpt" id="val"}
+        <tr>
+            <td><p align="center"><strong><span style="font-size: 14pt; font-family: 微软雅黑;"><span style="color: teal;">{$val.qi}期:</span></span></strong><strong><span
+                    style="font-size: 14pt; font-family: 微软雅黑;"><span
+                    style="color: red; background-color: rgb(255, 255, 0);">【</span></span></strong><span
+                    style="background-color: rgb(255, 255, 0);"><font color="#ff0000" face="微软雅黑" style=""><span
+                    style="font-size: 18.6667px;"><b>{$val.shengxiao}</b></span><b style="font-size: 14pt;">】</b></font></span><strong><font
+                    face="微软雅黑"><span style="font-size: 14pt;">开：</span></font></strong><strong
+                    style="background-color: transparent; line-height: 1.42857;"><span
+                    style="font-family: 微软雅黑; font-size: 14pt;"><font
+                    color="#ff0000">{$val.kai}</font></span></strong><br></p></td>
+        </tr>
+        {/volist}
+
+        </tbody>
+    </table>
+
+</div>
+
+<!--高手资料-->
+<div id="gszl" class="box">
+    <style>
+        .gsb-tit {
+        }
+
+        .gsb-tit img {
+            width: 100%;
+            height: auto;
+        }
+
+        .gsb-box {
+        }
+
+        .gsb-box ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .gsb-box ul li {
+            margin-bottom: 10px;
+            width: calc(50% - 5px);
+        }
+
+        .gsb-box ul li:last-child {
+            margin-bottom: 0;
+        }
+
+        .gsb-box ul li:nth-last-child(2) {
+            margin-bottom: 0;
+        }
+
+        .gsb-box ul li a {
+            display: block;
+            padding: 10px 15px;
+            border: solid 1px #aaa;
+            text-decoration: none;
+            border-radius: 8px;
+            background: linear-gradient(to top, #e6e6e6, #fff);
+        }
+
+        .gsb-box ul li a:hover {
+            background: linear-gradient(to top, #ddd, #f5f5f5);
+        }
+
+        .gsb-box ul li .gsbli1 {
+            display: flex;
+            margin-bottom: 5px;
+        }
+
+        .gsb-box ul li .gsbli1 em {
+            display: inline-block;
+            width: 54px;
+            height: 24px;
+            line-height: 24px;
+            margin-right: 5px;
+            text-align: center;
+            color: #fff;
+            font-size: 12px;
+            font-style: normal;
+            background: url(/index_files/gsb-ico1.png);
+            margin-left: -16px;
+        }
+
+        .gsb-box ul li .gsbli1 em.minj {
+            background: url(/index_files/gsb-ico1.png);
+        }
+
+        .gsb-box ul li .gsbli1 span {
+            flex: 1;
+            font-size: 24px;
+        }
+
+        .gsb-box ul li .gsbli2 {
+            font-size: 16px;
+            color: #626262;
+        }
+
+        .gsb-box ul li .gsbli2 span {
+            color: #aaa;
+        }
+
+        @media screen and (max-width: 900px) {
+            .gsb-box ul li {
+                margin-bottom: 5px;
+                width: 100%;
+            }
+
+            .gsb-box ul li a {
+                display: flex;
+                align-items: center;
+            }
+
+            .gsb-box ul li:last-child {
+                margin-bottom: 0;
+            }
+
+            .gsb-box ul li:nth-last-child(2) {
+                margin-bottom: 5px;
+            }
+
+            .gsb-box ul li a {
+                padding: 8px 10px;
+                border-radius: 5px;
+            }
+
+            .gsb-box ul li .gsbli1 {
+                flex: 1;
+                margin-bottom: 0;
+                align-items: center;
+            }
+
+            .gsb-box ul li .gsbli1 em {
+                width: 46px;
+                height: 20px;
+                line-height: 20px;
+                margin-right: 5px;
+                font-size: 12px;
+                margin-left: 0;
+                border-radius: 3px;
+            }
+
+            .gsb-box ul li .gsbli1 em.minj {
+                background: #238ae1;
+            }
+
+            .gsb-box ul li .gsbli1 span {
+                flex: 1;
+                font-size: 18px;
+            }
+
+            .gsb-box ul li .gsbli2 {
+                font-size: 14px;
+                padding-left: 10px;
+            }
+
+            .gsb-box ul li .gsbli2 span {
+                display: none;
+            }
+        }
+
+    </style>
+    <table border="0" width="100%" bgcolor="#ffffff">
+        <tbody>
+        <tr>
+            <td style="border:0px double #000080" bgcolor="#000080" height="30"><p align="center">
+                <b><font face="楷体" color="#FFFF00" style="font-size: 20pt">{$site.lqzname}『高手资料』</font></b></p></td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="gsb-box">
+        <ul>
+            {volist name="data.gst" id="val"}
+            <li><a target="_blank" href="{:url('index/index/gst', ['id'=>$val.id])}">
+                <div class="gsbli1"><em>高手贴</em><span>{$val.qi}期<font color="#FF0000">【{$val.name}】</font></span></div>
+                <div class="gsbli2"><span>作者：</span>{$val.zhuozhe}</div>
+            </a></li>
+            {/volist}
+
+        </ul>
+    </div>
+</div>
+
+<!--精英资料-->
+<div id="jyzl" class="box">
+    <style>
+        .ccgi-gsb ul {
+            padding: 0 10px 10px
+        }
+
+        .ccgi-gsb ul li {
+            line-height: 40px;
+            font-size: 14px;
+            border-bottom: 1px #eaeaea solid;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis
+        }
+
+        .ccgi-gsb ul li span {
+        }
+
+        .ccgi-gsb ul li span.ccgi-gsb-tit {
+            height: 20px;
+            line-height: 20px;
+            margin-right: 8px;
+            padding: 0 5px;
+            font-size: 12px;
+            color: #fff;
+            border-radius: 5px;
+            background: #ff7200;
+            display: inline-block
+        }
+
+        .ccgi-gsb ul li span.ccgi-gsb-tit.lv {
+            background-color: #00c039
+        }
+
+        .ccgi-gsb ul li span.ccgi-gsb-tit.hong {
+            background-color: #ff0004
+        }
+
+        .ccgi-gsb ul li span.ccgi-gsb-tit.cheng {
+            background-color: #ff3f00
+        }
+
+        .ccgi-gsb ul li span.ccgi-gsb-tit.lan {
+            background-color: #005cff
+        }
+
+        .ccgi-gsb ul li span.ccgi-zuozhe {
+            float: right;
+            margin-left: 10px;
+            font-size: 14px;
+            color: #999
+        }
+
+        .ccgi-gsb ul li a {
+        }
+
+        .gsdh {
+            background-color: #ff0;
+            font-family: '微软雅黑';
+            font-size: 13pt;
+            color: #000;
+            font-weight: 500;
+            border: solid 1px #C0C0C0;
+            line-height: 0.8rem;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
+    <table border="0" width="100%" bgcolor="#ffffff">
+        <tbody>
+        <tr>
+            <td style="border:0px double #000080" bgcolor="#000080" height="30"><p align="center">
+                <b><font face="楷体" color="#FFFF00" style="font-size: 20pt">{$site.lqzname}『精英资料』</font></b></p></td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="ccgi-gsb">
+        <ul>
+            {volist name="data.jyt" id="val"}
+            <li>
+                <span class="ccgi-zuozhe">{$val.zhuozhe}</span><span class="ccgi-gsb-tit"
+                                                                     style="background-color:#000080"><span
+                    style="background-color:#000080">精英贴</span></span> <a target="_blank"
+                                                                          href="{:url('index/index/jyt', ['id'=>$val.id])}"><span
+                    style="color:#000000;"><strong><span style="font-size:13pt">{$val.qi}期<font color="#0000FF">【{$val.name}】</font><span
+                    style="color:#ff0000;">已上料</span></span></strong></span></a></li>
+            <li>
+                {/volist}
+
+        </ul>
+    </div>
+</div>
+
+<!--八肖中特-->
+<div id="bxzt" class="box">
+    <table border="0" width="100%" bgcolor="#ffffff">
+        <tbody>
+        <tr>
+            <td style="border:0px double #000080" bgcolor="#000080" height="30"><p align="center">
+                <b><font face="楷体" color="#FFFF00" style="font-size: 20pt">{$site.lqzname}『八肖中特』</font></b></p></td>
+        </tr>
+        </tbody>
+    </table>
+    <table border="0" width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF"
+           style="border-left-width: 0px; border-right-width: 0px; border-top-width: 0px">
+        <tbody>
+        {volist name="data.bxzt" id="val"}
+        <tr>
+            <td align="center" height="40"
+                style="text-align: center; margin: 0px; padding: 3px 2px; border: 1px solid rgb(229, 229, 229); word-break: break-all;font-weight:bold">
+                <p><span style="color: rgb(0, 0, 255); font-size: 17px; line-height: 17px;">{$val.qi}期:</span><font
+                        color="#0000FF"
+                        style="color: rgb(0, 0, 255); font-size: 18px; line-height: 17px; text-align: start; margin: 0px; padding: 0px;"><span
+                        style="font-size: 17px; line-height: 17px;">八</span>肖</font><font
+                        style="line-height: inherit; text-align: start; margin: 0px; padding: 0px;"><font
+                        style="font-size: 18px; margin: 0px; padding: 0px;">【{$val.shengxiao}】开</span></font></font></font><font
+                        color="#ff0000"
+                        style="background-color: transparent; font-size: 17px; text-align: start;">{$val.kai}</font><span
+                        style="background-color: transparent; font-size: 17px; text-align: start;">准</span><br>
+
+
+                </p>
+                <p></p></td>
+        </tr>
+        {/volist}
+        </tbody>
+
+    </table>
+</div>
+
+<!--管家婆一句话-->
+<div id="gjpyjh" class="box">
+    <table border="0" width="100%" bgcolor="#ffffff"><tbody>
+    <tr><td style="border:0px double #000080" bgcolor="#000080" height="30"><p align="center">
+        <b><font face="楷体" color="#FFFF00" style="font-size: 20pt">{$site.lqzname}『精解管家婆一句话』</font></b></p></td></tr></tbody>
+    </table>
+    {volist name="data.gjpyjh" id="val"}
+    <p align="center">
+        <img width="100%" src="{$val.image}">
+    </p>
+    <table border="1" width="100%" cellpadding="0" cellspacing="0" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" bgcolor="#FFFFFF">
+        <tbody>
+        <tr>
+            <td class="center f11 black l150" style="">
+            <p align="left" style=""><font size="4" style=""><b>{$val.qi}期</b><font color="#008000" style="font-weight: bold;">【精解管家婆一句话】</font>
+                <font color="#FF0000" style="font-weight: bold;">开{$val.kai}中</font><font color="#008000" style="font-weight: bold;"><br></font>
+                <font color="#6600CC" style=""><b>【</b></font></font><font size="4" style=""><font color="#6600CC" style=""><b>{$val.ju}】【{$val.xj}</b></font>
+            </font><font size="4" style=""><font color="#6600CC" style=""><b>】</b><br></font></font>
+            </p>
+                {$val.content}
+        </td>
+
+
+
+        </tr>
+        </tbody>
+    </table>
+    {/volist}
+</div>
+
+<!--独家来料一句中特-->
+<div id="yjzt" class="box">
+    <table border="0" width="100%" bgcolor="#ffffff"><tbody>
+    <tr><td style="border:0px double #000080" bgcolor="#000080" height="30"><p align="center">
+        <b><font face="楷体" color="#FFFF00" style="font-size: 20pt">{$site.lqzname}『独家来料一句中特』</font></b></p></td></tr></tbody></table><span type="ajax" id="http-djll1jzt">
+    <div class="white-box"><p></p><table border="0" width="100%"></table>
+
+<table border="0" width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" style="border-left-width: 0px; border-right-width: 0px; border-top-width: 0px">
+    <tbody>
+
+{volist name="data.yjzt" id="val"}
+<tr>
+				<th width="14%" style="border-style: solid; border-width: 1px" bordercolor="#000000" height="43"><b>
+				{$val.qi}期</b></th>
+				<th style="border-style: solid; border-width: 1px" bordercolor="#000000" height="43"><font color="#FF0000"><span style="font-size: 14.6667px;"><b>{$val.ju}</b></span></font></th>
+				<th width="16%" style="border-style: solid; border-width: 1px" bordercolor="#000000" height="43"><font color="#000000"><b>
+				开</b></font><b>{$val.kai}</b></th>
+			</tr>
+{/volist}
+
+</tbody>
+</table></div></span>
+</div>
+
+<!--澳门挂牌-->
+<div id="amgp" class="box">
+    <table border="0" width="100%" bgcolor="#ffffff">
+        <tbody>
+        <tr>
+            <td style="border:0px double #000080" bgcolor="#000080" height="30"><p align="center">
+                <b><font face="楷体" color="#FFFF00" style="font-size: 20pt">{$site.lqzname}『澳门挂牌』</font></b></p></td>
+        </tr>
+        </tbody>
+    </table>
+    {volist name="data.amgp" id="val"}
+    <div style="border-bottom: 5px solid #f5f5f5;">
+        <p style="margin-bottom: 8px; text-align: left;"><font size="4"><font color="#ff0000"><b>澳门{$val.qi}期传真《{$val.ju}》</b></font></font></p>
+        {$val.content}
+    </div>
+    {/volist}
+</div>
+
+<!--稳中双波-->
+<div id="wzsb" class="box">
+    <table border="0" width="100%" bgcolor="#ffffff">
+        <tbody>
+        <tr>
+            <td style="border:0px double #000080" bgcolor="#000080" height="30"><p align="center">
+                <b><font face="楷体" color="#FFFF00" style="font-size: 20pt">{$site.lqzname}『稳中双波』</font></b></p></td>
+        </tr>
+        </tbody>
+    </table>
+    <table border="0" width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF"
+           style="border-left-width: 0px; border-right-width: 0px; border-top-width: 0px">
+        <tbody>
+
+        {volist name="data.wzsb" id="val"}
+        <tr>
+            <td><p align="center"><strong><span style="font-size: 14pt; font-family: 微软雅黑;"><span style="color: teal;">{$val.qi}期稳中双波:</span></span></strong><strong><span
+                    style="font-size: 14pt; font-family: 微软雅黑;"><span
+                    style="color: #0000FF;">【</span></span></strong><span
+                    style="">
+                <font color="#0000FF" face="微软雅黑" style="">
+                    <span style="font-size: 18.6667px;"><b>{$val.ju}</b></span><b style="font-size: 14pt;">】</b></font></span><strong><font
+                    face="微软雅黑"><span style="font-size: 14pt;">开：</span></font></strong><strong
+                    style="background-color: transparent; line-height: 1.42857;"><span
+                    style="font-family: 微软雅黑; font-size: 14pt;"><font
+                    color="#ff0000">{$val.kai}</font></span></strong><br></p></td>
+        </tr>
+        {/volist}
+
+        </tbody>
+    </table>
+
+</div>
+
+<!--生肖属性表格-->
+{include file="index:biao"}
+<!--生肖属性-->
+
+
+<div class="box">
+    <div class="footer bq" style="padding:8px;font-size:14px">
+        <div class="cont center">
+            <font color="#808080" face="微软雅黑" style="font-size: 9pt">
+                Copyright ©2023&nbsp;老钱庄 版权所有 不得转载<br>
+                〖{$vstr}老钱庄〗 请记好,以便再次访问!</font><br>
+            <a href="https://www.sharecy.net/?cate=3">澳门六合彩图库源码</a>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
